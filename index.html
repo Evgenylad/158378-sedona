@@ -8,9 +8,7 @@
     <div class="container">
       <header class="main-header">
         <figure class="main-header-logo">
-          <a href="/index.ru">
             <img src="http://placehold.it/60x60" width="60" height="60" alt="Логотип">
-          </a>
         </figure>
 
         <nav class="main-menu">
@@ -22,50 +20,55 @@
           </div>
         </nav>
 
-        <div>
+        <div class="header-img">
           <img src="#" alt="Общий вид на горы со слоганом">
         </div>
+
+        <div class="header-slogan">
+          <img src="#" alt="Slogan">
+        </div>
+
+      </header>
+
+      <article class="reasons">
+        <header class="features-header">
+          <h1 class="header-description">Седона - небольшой городок в Аризоне,<br>
+          заслуживающий большего!</h1>
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньен!</p>
         </header>
 
-        <article class="reasons">
-          <header class="features-header">
-            <h1 class="header-description">Седона - небольшой городок в Аризоне,<br>
-            заслуживающий большего!</h1>
-            <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньен!</p>
-          </header>
-
-          <div class="reason-row reason-row-image">
-            <div class="reason reason-blue">
-              <h2>Настоящий городок</h2>
-              <span class="reason-number">№1</span>
-              <p>Седона - не аттракцион для туристов
-               там течет своя жизнь</p>
-            </div>
-
-             <figure class="reason-image">
-               <img src="http://placehold.it/600x150" width="600" height="150" alt="Вид на город">
-             </figure>
+        <div class="reason-row reason-row-image">
+          <div class="reason reason-blue">
+            <h2>Настоящий городок</h2>
+            <span class="reason-number">№1</span>
+            <p>Седона - не аттракцион для туристов
+             там течет своя жизнь</p>
           </div>
 
-          <div class="reason-row">
-            <div class="reason reason-image reason-image-house">
-              <h2 class="item-name">Жилье</h2>
-              <p>Рекомендуем пожить в настоящем
-                мотеле, все как в кино!</p>
-            </div>
+           <figure class="reason-image">
+             <img src="http://placehold.it/600x150" width="600" height="150" alt="Вид на город">
+           </figure>
+        </div>
 
-            <div class="reason reason-image reason-image-burger">
-              <h2 class="item-name">Еда</h2>
-              <p>Всегда заказывайте фирменный бургер,
-              вы не разочаруетесь!</p>
-            </div>
-
-            <div class="reason reason-image reason-image-gift">
-              <h2 class="item-name">Сувениры</h2>
-              <p>Не только китайского,
-              но и местного производства!</p>
-            </div>
+        <div class="reason-row">
+          <div class="reason reason-image reason-image-house">
+            <h2 class="item-name">Жилье</h2>
+            <p>Рекомендуем пожить в настоящем
+              мотеле, все как в кино!</p>
           </div>
+
+          <div class="reason reason-image reason-image-burger">
+            <h2 class="item-name">Еда</h2>
+            <p>Всегда заказывайте фирменный бургер,
+            вы не разочаруетесь!</p>
+          </div>
+
+          <div class="reason reason-image reason-image-gift">
+            <h2 class="item-name">Сувениры</h2>
+            <p>Не только китайского,
+            но и местного производства!</p>
+          </div>
+        </div>
 
         <div class="reason-row reason-row-invert">
           <figure class="reason-image">
@@ -129,7 +132,8 @@
               </div>
 
               <div class="form-group">
-                  <label for="adults">Взрослые:</label>
+                <label for="adults">Взрослые:</label>
+                <div class="group-amount">
                   <button>
                     <i class="icon-minus"></i>
                   </button>
@@ -137,17 +141,20 @@
                   <button>
                     <i class="icon-minus"></i>
                   </button>
+                </div>
               </div>
 
               <div class="form-group">
                 <label for="children">Дети:</label>
-                <button>
-                  <i class="icon-minus"></i>
-                </button>
-                <input type="number" id="children" name="children" value="0">
-                <button>
-                  <i class="icon-minus"></i>
-                </button>
+                <div class="group-amount">
+                  <button>
+                    <i class="icon-minus"></i>
+                  </button>
+                  <input type="number" id="children" name="children" value="0">
+                  <button>
+                    <i class="icon-minus"></i>
+                  </button>
+                </div>
               </div>
 
               <button type="submit" class="btn-blue booking-form-btn">Найти</button>
