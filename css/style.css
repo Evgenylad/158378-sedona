@@ -1,0 +1,24 @@
+body {
+  font-family: "PT Sans Regular";
+  font-size: 14px ;
+  color: black;
+  font-weight: regular;
+  line-height: 24px;
+}
+
+h1 {
+  font-size: 21px ;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 21px ;
+  font-weight: bold;
+
+}
+
+.booking h2 {
+  font-size: 30px ;
+  font-weight: bold;
+
+}
