@@ -1,24 +1,48 @@
 body {
-  font-family: "PT Sans Regular";
-  font-size: 14px ;
-  color: black;
-  font-weight: regular;
+  font-family: "PT Sans Regular", "Tahoma", sans-serif;
+  font-size: 14px;
+  color: #000000;
+  font-weight: normal;
   line-height: 24px;
 }
 
-h1 {
-  font-size: 21px ;
+.results-sorting,
+.header-description,
+.booking h3,
+.booking-search-btn,
+.booking-form-btn {
   font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
 }
 
-h2 {
-  font-size: 21px ;
+.item-name {
+  font-size: 21px;
   font-weight: bold;
+  line-height: 21px;
 
 }
 
 .booking h2 {
-  font-size: 30px ;
   font-weight: bold;
+  font-size: 30px;
 
+}
+
+.main-menu {
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.features-header p {
+  line-height: 26px;
+}
+
+.reason p {
+  line-height: 21px;
+}
+
+.booking-search-btn,
+.booking-form-btn {
+  color: #ffffff
 }
