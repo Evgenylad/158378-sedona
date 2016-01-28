@@ -21,11 +21,17 @@ line-height: 26px;
 color: #ffffff;
 }
 
-.reason-name {
-  font-size: 21px;
-  font-weight: bold;
-  line-height: 21px;
+.reason {
+line-height: 21px;
+}
 
+.reason-name {
+font-size: 21px;
+font-weight: bold;
+}
+
+.reason-number {
+  
 }
 
 .booking h2 {
