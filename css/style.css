@@ -143,6 +143,54 @@ font-weight: bold;
   vertical-align: middle;
 }
 
+.booking {
+  display: block;
+  width: 48%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.map {
+  display: block;
+  width: 100%;
+}
+
+.form-booking {
+  display: block;
+  width: 48%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer-hastag {
+  float: left;
+  width: 26%;
+  margin-right: 5%;
+}
+
+.footer-social-btn {
+  float: left;
+  width: 34%;
+  margin-right: 5%;
+}
+
+.footer-copyright {
+  float: right;
+  width: 26%;
+  font-size: 0;
+}
+
+.footer-copyright p {
+  display: inline-block;
+  font-size: 14px;
+}
+
+
 .clearfix:after{
     content:'';
     display:table;
