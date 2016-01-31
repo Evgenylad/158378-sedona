@@ -56,10 +56,13 @@ font-weight: bold;
 
 /* Сетка страниц */
 
+.main-header {
+  width: 1200px;
+}
 
 .main-menu {
   float: left;
-  width: 1200px;
+  width: 100%;
   font-size: 0px;
 }
 
@@ -67,12 +70,11 @@ font-weight: bold;
   float:left;
   width: 25%;
   font-size: 14px;
-
 }
 
 .main-header-logo {
   display: block;
-  margin: 0px;
+  width: 11.5%;
   margin-left: auto;
   margin-right: auto;
 }
