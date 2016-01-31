@@ -31,7 +31,7 @@ font-weight: bold;
 }
 
 .reason-number {
-  
+
 }
 
 .booking h2 {
@@ -52,4 +52,27 @@ font-weight: bold;
 .features-description {
   font-size: 21px;
   font-weight: bold;
+}
+
+/* Сетка страниц */
+
+
+.main-menu {
+  float: left;
+  width: 1200px;
+  font-size: 0px;
+}
+
+.main-menu a {
+  float:left;
+  width: 25%;
+  font-size: 14px;
+
+}
+
+.main-header-logo {
+  display: block;
+  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
