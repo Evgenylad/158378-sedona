@@ -56,6 +56,12 @@ font-weight: bold;
 
 /* Сетка страниц */
 
+.container {
+  min-width: 768px;
+  max-width: 1200px;
+  margin: auto;
+}
+
 .main-menu {
   float: left;
   width: 1200px;
@@ -65,15 +71,11 @@ font-weight: bold;
 .main-menu a {
   float:left;
   width: 20%;
+  margin-right: 6%;
   font-size: 14px;
-
 }
-
-.main-header-logo {
-  display: block;
-  margin: 0px;
-  margin-left: auto;
-  margin-right: auto;
+.main-menu a:last-child {
+  margin-right: 0;
 }
 
 .header-img {
@@ -82,84 +84,69 @@ font-weight: bold;
 }
 
 .header-slogan {
-  display: block;
   width: 39%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .features-header
 {
-  display: block;
   width: 39%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
-.reason-row {
-  display: block;
+.reason {
+  width:
 }
-
 .reason-row-image .reason-blue {
   float: left;
-  width: 30%;
+  width: 33%;
 }
 
 .reason-row-image .reason-image {
   float: right;
-  width: 70%;
-  margin: 0px;
+  width: 67%;
+  margin: 0;
 }
 
 .reason-image-house {
   float: left;
-  width: 33.3%;
+  width: 33%;
 }
 
 .reason-image-burger {
   float: left;
-  width: 33.3%;
+  width: 33%;
 }
 
 .reason-image-gift {
   float: left;
-  width: 33.3%;
+  width: 33%;
 }
 
 .reason-row-invert .reason-blue {
   float: right;
-  width: 30%;
+  width: 33%;
 }
 
 .reason-row-invert .reason-image {
   float: left;
-  width: 70%;
-  margin: 0px;
+  width: 67%;
+  margin: 0;
 }
 
 .reason-gray {
-  display: inline-block;
+  float:left;
   width: 33%;
-  vertical-align: middle;
 }
 
 .booking {
-  display: block;
   width: 48%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.map {
-  display: block;
-  width: 100%;
+margin: 0 auto;
 }
 
 .form-booking {
-  display: block;
   width: 48%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .main-footer {
@@ -185,7 +172,7 @@ font-weight: bold;
   font-size: 0;
 }
 
-.footer-copyright p {
+.footer-copyright span {
   display: inline-block;
   font-size: 14px;
 }
