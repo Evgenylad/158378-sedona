@@ -77,8 +77,8 @@ figure {
 }
 
 .main-menu a:nth-child(2) {
-  margin-right: 20%
-} 
+  margin-right: 20%;
+}
 
 .main-menu a:nth-child(4n+1) {
   text-align: left;
