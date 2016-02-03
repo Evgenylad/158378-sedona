@@ -73,21 +73,24 @@ figure {
 .main-menu a {
   float:left;
   width: 20%;
-  margin-right: 6%;
+}
+
+.main-menu a:nth-child(2n) {
+  margin-right: 20%
+}
+
+.main-menu a:nth-child(3n) {
+  text-align: right;
 }
 
 .main-menu a:last-child {
   margin-right: 0;
+  text-align: right;
 }
 
 .header-slogan {
-  width: 39%;
+  width: 458px;
   margin: 0 auto;
-}
-
-.hotel-filter {
-  padding-left: 6%;
-  padding-right: 6%;
 }
 
 .services {
@@ -115,7 +118,7 @@ fieldset {
   padding: 0;
 }
 
-.results-sorting {
+.content-container {
   padding-left: 6%;
   padding-right: 6%;
 }
@@ -164,11 +167,7 @@ fieldset {
 .features-header {
   width: 39%;
   margin: 0 auto;
-}
-
-.hotel {
-  padding-left: 6%;
-  padding-right: 6%;
+  text-align: center;
 }
 
 .hotel-foto {
@@ -184,15 +183,22 @@ fieldset {
 .rate {
   float: right;
   width: 20%;
+  text-align: right;
 }
 
 .reason {
   float: left;
   width: 33%;
+  text-align: center;
+}
+
+.reason-image {
+  height: 256px;
 }
 
 .reason-row-image .reason-image {
   float: right;
+  overflow: hidden;
   width: 67%;
   margin: 0;
 }
@@ -200,10 +206,12 @@ fieldset {
 .reason-row-invert .reason{
   float: right;
   width: 33%;
+  text-align: center;
 }
 
 .reason-row-invert .reason-image {
   float: left;
+  overflow: hidden;
   width: 67%;
   margin: 0;
 }
@@ -211,16 +219,18 @@ fieldset {
 .booking {
   width: 48%;
   margin: 0 auto;
+  text-align: center;
 }
 
 .form-booking {
   width: 576px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .main-footer {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 37px;
+  padding-bottom: 37px;
   padding-left: 6%;
   padding-right: 6%;
 }
