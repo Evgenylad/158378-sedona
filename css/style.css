@@ -73,19 +73,20 @@ figure {
 .main-menu a {
   float:left;
   width: 20%;
+  text-align: center;
 }
 
-.main-menu a:nth-child(2n) {
+.main-menu a:nth-child(2) {
   margin-right: 20%
+} 
+
+.main-menu a:nth-child(4n+1) {
+  text-align: left;
 }
 
-.main-menu a:nth-child(3n) {
+.main-menu a:nth-child(4n) {
   text-align: right;
-}
-
-.main-menu a:last-child {
   margin-right: 0;
-  text-align: right;
 }
 
 .header-slogan {
@@ -194,13 +195,13 @@ fieldset {
 
 .reason-image {
   height: 256px;
+  overflow: hidden;
+  width: 67%;
+  margin: 0;
 }
 
 .reason-row-image .reason-image {
   float: right;
-  overflow: hidden;
-  width: 67%;
-  margin: 0;
 }
 
 .reason-row-invert .reason{
@@ -211,9 +212,6 @@ fieldset {
 
 .reason-row-invert .reason-image {
   float: left;
-  overflow: hidden;
-  width: 67%;
-  margin: 0;
 }
 
 .booking {
