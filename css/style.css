@@ -121,13 +121,15 @@ fieldset {
 .reason {
   float: left;
   width: 33%;
+  padding-top: 50px;
+  padding-bottom: 15px;
   text-align: center;
   line-height: 21px;
 }
 
 .reason-blue {
   background: #81b3d2;
-  min-height: 256px;
+  min-height: 191px;
   color: #ffffff;
 }
 
@@ -176,7 +178,6 @@ fieldset {
 .reason-row-invert .reason{
   float: right;
   width: 33%;
-  text-align: center;
 }
 
 .reason-row-invert .reason-image {
