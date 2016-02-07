@@ -292,13 +292,45 @@ line-height: 26px;
 .hotel-content {
   float: left;
   width: 54.5%;
-  padding-top: 30px;
+  padding-top: 24px;
   padding-bottom: 30px;
 }
 
 .hotel-content h3 {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.hotel-group {
+font-size: 0px;
+}
+
+.hotel-type {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.hotel-price {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.hotel-details-btn {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.hotel-booking-btn {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .rate {
