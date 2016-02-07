@@ -165,9 +165,16 @@ fieldset {
 }
 
 .reason-image {
+  display: block;
+  margin: 0;
   height: 256px;
   overflow: hidden;
   width: 67%;
+  margin: 0;
+}
+
+.reason-image img {
+  display: block;
   margin: 0;
 }
 
