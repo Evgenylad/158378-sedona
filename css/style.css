@@ -1,5 +1,5 @@
 body {
-  font-family: "PT Sans Regular", "Tahoma", sans-serif;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 14px;
   color: #000000;
   font-weight: normal;
@@ -17,6 +17,12 @@ figure {
   margin: 0;
 }
 
+fieldset {
+  border: 0;
+  margin: 0 auto;
+  padding: 0;
+}
+
 /* MAIN MENU */
 
 .container {
@@ -26,8 +32,6 @@ figure {
 }
 
 .main-menu {
-  padding-top: 15px;
-  padding-bottom: 15px;
   padding-left: 6%;
   padding-right: 6%;
   font-weight: bold;
@@ -37,6 +41,8 @@ figure {
 .main-menu a {
   float:left;
   width: 20%;
+  padding-top: 15px;
+  padding-bottom: 15px;
   color: #000000;
   text-align: center;
   text-decoration: none;
@@ -59,14 +65,19 @@ figure {
   position: absolute;
   top: 0;
   left: 50%;
+  transform: translateX(-50%);
 }
 
 
 /* Главная страница*/
 
+
 .header-slogan {
   width: 458px;
   margin: 0 auto;
+  padding-top: 76px;
+  background-image: url('../img/main-background-photo.jpg');
+
 }
 
 .features-header {
@@ -161,6 +172,18 @@ line-height: 26px;
   text-align: center;
 }
 
+/* HOTELS */
+
+.content-container {
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+.hotel-filter {
+  width: 100%;
+  background-image: url('../img/catalog-background-photo.jpg');
+  background-size: cover;
+}
 .services {
   float:left;
   width: 33%;
@@ -178,19 +201,6 @@ line-height: 26px;
 .price {
   float: right;
   width: 33%;
-}
-
-fieldset {
-  border: 0;
-  margin: 0 auto;
-  padding: 0;
-}
-
-/* HOTELS */
-
-.content-container {
-  padding-left: 6%;
-  padding-right: 6%;
 }
 
 .results-sorting h1 {
