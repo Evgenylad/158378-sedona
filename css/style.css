@@ -6,54 +6,18 @@ body {
   line-height: 24px;
 }
 
-.results-sorting,
-.booking h3 {
-font-weight: bold;
-line-height: 26px;
+/* ОБШИЕ ПРАВИЛА */
+.clearfix:after{
+    content:'';
+    display:table;
+    clear:both;
 }
 
-.booking-search-btn,
-.booking-form-btn {
-font-weight: bold;
-font-size: 21px;
-line-height: 26px;
-color: #ffffff;
+figure {
+  margin: 0;
 }
 
-.reason {
-line-height: 21px;
-}
-
-.reason-name {
-font-size: 21px;
-font-weight: bold;
-}
-
-.reason-number {
-
-}
-
-.booking h2 {
-  font-weight: bold;
-  font-size: 30px;
-
-}
-
-.main-menu {
-  font-weight: bold;
-  line-height: 26px;
-}
-
-.features-header {
-  line-height: 26px;
-}
-
-.features-description {
-  font-size: 21px;
-  font-weight: bold;
-}
-
-/* Сетка страниц */
+/* MAIN MENU */
 
 .container {
   min-width: 768px;
@@ -61,19 +25,21 @@ font-weight: bold;
   margin: auto;
 }
 
-figure {
-  margin: 0;
-}
-
 .main-menu {
+  padding-top: 15px;
+  padding-bottom: 15px;
   padding-left: 6%;
   padding-right: 6%;
+  font-weight: bold;
+  line-height: 26px;
 }
 
 .main-menu a {
   float:left;
   width: 20%;
+  color: #000000;
   text-align: center;
+  text-decoration: none;
 }
 
 .main-menu a:nth-child(2) {
@@ -89,9 +55,110 @@ figure {
   margin-right: 0;
 }
 
+.main-header-logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+
+/* Главная страница*/
+
 .header-slogan {
   width: 458px;
   margin: 0 auto;
+}
+
+.features-header {
+  width: 39%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 26px;
+}
+
+.features-description {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.hotel-foto {
+  float: left;
+  width: 135px;
+}
+
+.hotel-content {
+  float: left;
+  width: 54.5%;
+}
+
+.rate {
+  float: right;
+  width: 20%;
+  text-align: right;
+}
+
+.reason {
+  float: left;
+  width: 33%;
+  text-align: center;
+  line-height: 21px;
+}
+
+.reason-name {
+font-size: 21px;
+font-weight: bold;
+}
+
+.reason-image {
+  height: 256px;
+  overflow: hidden;
+  width: 67%;
+  margin: 0;
+}
+
+.reason-row-image .reason-image {
+  float: right;
+}
+
+.reason-row-invert .reason{
+  float: right;
+  width: 33%;
+  text-align: center;
+}
+
+.reason-row-invert .reason-image {
+  float: left;
+}
+
+.booking {
+  width: 48%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.booking h2 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.booking-search-btn,
+.booking-form-btn {
+font-weight: bold;
+font-size: 21px;
+line-height: 26px;
+color: #ffffff;
+}
+
+.results-sorting,
+.booking h3 {
+font-weight: bold;
+line-height: 26px;
+}
+
+.form-booking {
+  width: 576px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .services {
@@ -118,6 +185,8 @@ fieldset {
   margin: 0 auto;
   padding: 0;
 }
+
+/* HOTELS */
 
 .content-container {
   padding-left: 6%;
@@ -165,66 +234,7 @@ fieldset {
   font-size: 21px
 }
 
-.features-header {
-  width: 39%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.hotel-foto {
-  float: left;
-  width: 135px;
-}
-
-.hotel-content {
-  float: left;
-  width: 54.5%;
-}
-
-.rate {
-  float: right;
-  width: 20%;
-  text-align: right;
-}
-
-.reason {
-  float: left;
-  width: 33%;
-  text-align: center;
-}
-
-.reason-image {
-  height: 256px;
-  overflow: hidden;
-  width: 67%;
-  margin: 0;
-}
-
-.reason-row-image .reason-image {
-  float: right;
-}
-
-.reason-row-invert .reason{
-  float: right;
-  width: 33%;
-  text-align: center;
-}
-
-.reason-row-invert .reason-image {
-  float: left;
-}
-
-.booking {
-  width: 48%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.form-booking {
-  width: 576px;
-  margin: 0 auto;
-  text-align: center;
-}
+/* MAIN FOOTER */
 
 .main-footer {
   padding-top: 37px;
@@ -254,11 +264,4 @@ fieldset {
 .footer-copyright span {
   display: inline-block;
   font-size: 14px;
-}
-
-
-.clearfix:after{
-    content:'';
-    display:table;
-    clear:both;
 }
