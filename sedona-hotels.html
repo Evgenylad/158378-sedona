@@ -11,10 +11,12 @@
     <div class="container">
       <header class="main-header catalog">
         <nav class="main-menu clearfix">
-            <a href="#"> Информация</a>
-            <a href="#"> Фото и видео</a>
-            <a href="#"> Карта штата</a>
-            <a href="#"> Гостиницы</a>
+          <ul>
+            <li><a href="#"> Информация</a></li>
+            <li><a href="#"> Фото и видео</a></li>
+            <li><a href="#"> Карта штата</a></li>
+            <li><a href="#"> Гостиницы</a></li>
+          </ul>
         </nav>
 
         <figure class="main-header-logo">
@@ -29,16 +31,16 @@
 
           <fieldset class="services">
             <legend>Инфраструктура:</legend>
-            <label class="service"> <input type="checkbox" id="pool" name="pool" checked>Бассейн</label>
-            <label class="service"><input type="checkbox" id="parking" name="parking">Парковка</label>
-            <label class="service"><input type="checkbox" id="wi-fi" name="wi-fi">wi-fi</label>
+            <label class="service"> <input type="checkbox" id="pool" name="pool" checked hidden>Бассейн</label>
+            <label class="service"><input type="checkbox" id="parking" name="parking" hidden>Парковка</label>
+            <label class="service"><input type="checkbox" id="wi-fi" name="wi-fi" hidden>wi-fi</label>
           </fieldset>
 
           <fieldset class="type">
             <legend>Тип жилья:</legend>
-            <label class="service"><input type="checkbox" id="hotel" name="hotel" checked>Гостиница</label>
-            <label class="service"><input type="checkbox" id="motel" name="motel" checked>Мотель</label>
-            <label class="service"><input type="checkbox" id="apartments" name="apartments" checked>Апартаменты</label>
+            <label class="service"><input type="checkbox" id="hotel" name="hotel" checked hidden>Гостиница</label>
+            <label class="service"><input type="checkbox" id="motel" name="motel" checked hidden>Мотель</label>
+            <label class="service"><input type="checkbox" id="apartments" name="apartments" checked hidden>Апартаменты</label>
           </fieldset>
 
           <div class="price">
