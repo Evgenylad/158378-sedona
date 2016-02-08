@@ -30,6 +30,7 @@ fieldset {
 }
 
 .btn-blue {
+  color: #ffffff;
   background: #81b3d2;
 }
 
@@ -43,6 +44,7 @@ fieldset {
 }
 
 .btn-brown {
+  color: #ffffff;
   background: #766357;
 }
 
@@ -635,6 +637,11 @@ label[for="departure-date"] {
   width: 54.5%;
 }
 
+.hotel-content a {
+  text-decoration: none;
+  color: #000000;
+}
+
 .hotel-content h3 {
   margin-top: 0;
   margin-bottom: 0;
@@ -683,6 +690,7 @@ font-size: 0px;
   vertical-align: top;
   font-size: 14px;
   line-height: 21px;
+  color: #ffffff;
 }
 
 .hotel-booking-btn {
@@ -693,6 +701,7 @@ font-size: 0px;
   vertical-align: top;
   font-size: 14px;
   line-height: 21px;
+  color: #000000;
 }
 
 .rate {
