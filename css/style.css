@@ -179,6 +179,51 @@ fieldset {
   color: #ffffff;
 }
 
+.reason-icon-house {
+  position: relative;
+}
+
+.reason-icon-house::before {
+  content: "";
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  width: 155px;
+  height: 70px;
+  margin-left: -38px;
+  background: url('../img/icon-house.png') no-repeat;
+}
+
+.reason-icon-burger {
+  position: relative;
+}
+
+.reason-icon-burger::before {
+  content: "";
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  width: 155px;
+  height: 70px;
+  margin-left: -38px;
+  background: url('../img/icon-burger.png') no-repeat;
+}
+
+.reason-icon-gift {
+  position: relative;
+}
+
+.reason-icon-gift::before {
+  content: "";
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  width: 155px;
+  height: 70px;
+  margin-left: -38px;
+  background: url('../img/icon-gift.png') no-repeat;
+}
+
 .reason-icon .reason-name {
   padding-top: 164px;
 }
@@ -289,10 +334,6 @@ line-height: 26px;
   text-align: left;
 }
 
-.form-group label:last-child {
-  text-align: right;
-}
-
 .form-group:first-child {
   margin-top: 55px;
 }
@@ -323,6 +364,10 @@ line-height: 26px;
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
+}
+
+.form-group label:last-child {
+  margin-left: 40px;
 }
 
 .group-amount {
@@ -581,6 +626,7 @@ font-size: 0px;
   float: left;
   width: 26%;
   margin-right: 5%;
+  margin-top: 12px;
   font-size: 21px;
   line-height: 26px;
   text-decoration: none;
@@ -615,5 +661,14 @@ font-size: 0px;
 
 .footer-copyright span {
   display: inline-block;
+  padding-top: 9px;
   font-size: 14px;
+  vertical-align: top;
+}
+
+.footer-copyright img {
+  display: inline-block;
+  margin-left: 7px;
+  margin-top: 3px;
+  vertical-align: top;
 }
