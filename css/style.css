@@ -257,6 +257,7 @@ line-height: 26px;
   margin: 0 auto;
   text-align: center;
   background-color: #ffffff;
+  font-size: 0;
 }
 
 .booking-form-btn {
@@ -267,12 +268,15 @@ line-height: 26px;
   margin-bottom: 55px;
 }
 
-.form-group {
+.form-group:nth-child(1),
+.form-group:nth-child(2) {
     display: inline-block;
     min-width: 461px;
     margin-bottom: 30px;
     vertical-align: top;
+    font-size: 14px;
     font-weight: bold;
+    line-height: 24px;
 }
 
 .form-group input {
@@ -283,6 +287,10 @@ line-height: 26px;
   display: inline-block;
   min-width: 115px;
   text-align: left;
+}
+
+.form-group label:last-child {
+  text-align: right;
 }
 
 .form-group:first-child {
@@ -306,13 +314,15 @@ line-height: 26px;
   text-transform: uppercase;
 }
 
-.form-group:nth-child(3n) {
+.form-group:nth-child(3),
+.form-group:nth-child(4) {
+  display: inline-block;
   width: 230px;
-}
-
-.form-group:nth-child(4n) {
-  width: 230px;
-  padding-left: 50px;
+  margin-bottom: 30px;
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
 }
 
 .group-amount {
@@ -321,7 +331,7 @@ line-height: 26px;
 
 .adults,
 .children {
-  width: 30px;
+  width: 25px;
   height: 38px;
   border: 0;
   padding: 0;
@@ -340,10 +350,6 @@ line-height: 26px;
   border: 0;
   vertical-align: top;
   background: #f2f2f2;
-}
-
-.form-group .btn-minus {
-  margin-left: 20px;
 }
 
 .group-amount {
