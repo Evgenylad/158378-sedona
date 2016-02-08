@@ -240,10 +240,16 @@ line-height: 26px;
   display: inline-block;
   min-width: 569px;
   min-height: 26px;
-  vertical-align: top;
-  text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
+  vertical-align: top;
+  text-align: center;
+
+}
+
+.map {
+  height: 473px;
+  background: url('../img/map.jpg') no-repeat;
 }
 
 .form-booking {
@@ -254,26 +260,29 @@ line-height: 26px;
 }
 
 .booking-form-btn {
-  min-width: 458px;
+  min-width: 461px;
   min-height: 58px;
+  padding: 0;
+  border: 0;
+  margin-bottom: 55px;
 }
 
 .form-group {
     display: inline-block;
-    min-width: 460px;
+    min-width: 461px;
     margin-bottom: 30px;
-    text-align: left;
+    vertical-align: top;
     font-weight: bold;
 }
 
-.form-group:nth-child(4) {
-  padding-left: 50px;
+.form-group input {
+  background: #f2f2f2;
 }
 
-.form-group input {
+.form-group label {
   display: inline-block;
-  vertical-align: top;
-  background: #f2f2f2;
+  min-width: 115px;
+  text-align: left;
 }
 
 .form-group:first-child {
@@ -282,9 +291,10 @@ line-height: 26px;
 
 .arrival-date,
 .departure-date {
-  width: 331px;
+  display: inline-block;
+  min-width: 331px;
+  vertical-align: top;
   height: 38px;
-  margin-left: 20px;
   padding: 0;
   padding-left: 15px;
   border: 0;
@@ -296,12 +306,13 @@ line-height: 26px;
   text-transform: uppercase;
 }
 
-.form-group:nth-child(3) {
-  max-width: 230px;
+.form-group:nth-child(3n) {
+  width: 230px;
 }
 
-.form-group:nth-child(4) {
-  max-width: 230px;
+.form-group:nth-child(4n) {
+  width: 230px;
+  padding-left: 50px;
 }
 
 .group-amount {
