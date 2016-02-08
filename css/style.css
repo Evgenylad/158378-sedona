@@ -33,9 +33,29 @@ fieldset {
   background: #81b3d2;
 }
 
+.btn-blue:hover {
+  background: #669ec0;
+}
+
+.btn-blue:active {
+  color: #94b9d2;
+  background: #5496bd;
+}
+
 .btn-brown {
   background: #766357;
 }
+
+.btn-brown:hover {
+  background: #604e43;
+}
+
+.btn-brown:active {
+  color: #928a85;
+  background: #503e33;
+}
+
+
 
 /* MAIN MENU */
 
@@ -69,12 +89,30 @@ fieldset {
 .main-menu a {
   font-size: 14px;
   line-height: 26px;
-  text-transform: uppercase;
   color: #000000;
   text-decoration: none;
 }
 
-.main-menu li:nth-child(2) {
+.main-menu a:hover {
+  color: #81b3d2;
+}
+
+.main-menu a:active {
+  color: #cacaca;
+}
+
+.main-menu .current {
+  color: #766357;
+}
+
+.main-menu .active:hover {
+  color: #604e43;
+}
+.main-menu .active:active {
+  color: #dbd8d5;
+}
+
+.main-menu li:nth-child(2n) {
   margin-right: 20%;
 }
 
@@ -92,6 +130,7 @@ fieldset {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1;
 }
 
 
@@ -306,11 +345,16 @@ line-height: 26px;
 .map {
   height: 473px;
   position: relative;
-  background: #eeeeee url('../img/map.jpg') no-repeat;
   font-family: "PT Sans";
   text-transform: uppercase;
   font-size: 14px;
   line-height: 26px;
+}
+
+.canvas {
+  width: 100%;
+  height: 473px;
+  background: #eeeeee url('../img/map.jpg') no-repeat;
 }
 
 .form-booking {
@@ -321,6 +365,7 @@ line-height: 26px;
   padding: 55px;
   transform: translateX(-50%);
   background-color: #ffffff;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
 .booking-form-btn {
@@ -352,6 +397,14 @@ line-height: 26px;
   background-color: #f2f2f2;
   outline: none;
   border: none;
+}
+
+.form-group input:hover {
+  background-color: #ebebeb;
+}
+
+.form-group input:active {
+  background-color: #ffffff;
 }
 
 .form-group label {
@@ -535,6 +588,15 @@ label[for="departure-date"] {
   color: #cacaca;
 }
 
+.sorting-notactive:hover {
+  color: #81b3d2;
+}
+
+.sorting-notactive:active {
+  color: #000000;
+  border: none;
+}
+
 .sorting-notactive:nth-child(2) {
   padding-right: 0;
 }
@@ -579,6 +641,14 @@ label[for="departure-date"] {
   padding-bottom: 7px;
   line-height: 19px;
   font-weight: bold;
+}
+
+.hotel-content h3:hover {
+  color: #81b3d2;
+}
+
+.hotel-content h3:active {
+  color: #cacaca;
 }
 
 .hotel-group {
@@ -689,4 +759,12 @@ font-size: 0px;
   margin-left: 7px;
   margin-top: 3px;
   vertical-align: top;
+}
+
+.copyright-HTML-Academy-btn:hover {
+  color: #84b5d3;
+}
+
+.copyright-HTML-Academy-btn:active {
+  color: #bdbbbc;
 }
