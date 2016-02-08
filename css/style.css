@@ -259,18 +259,14 @@ line-height: 26px;
 }
 
 .form-group {
-  display: inline-block;
-  margin-bottom: 30px;
-}
-
-.form-group label {
     display: inline-block;
-    min-width: 114px;
+    min-width: 460px;
+    margin-bottom: 30px;
     text-align: left;
     font-weight: bold;
 }
 
-.form-group label:nth-child(4) {
+.form-group:nth-child(4) {
   padding-left: 50px;
 }
 
@@ -288,6 +284,7 @@ line-height: 26px;
 .departure-date {
   width: 331px;
   height: 38px;
+  margin-left: 20px;
   padding: 0;
   padding-left: 15px;
   border: 0;
@@ -300,25 +297,15 @@ line-height: 26px;
 }
 
 .form-group:nth-child(3) {
-  max-width: 232px;
+  max-width: 230px;
 }
 
 .form-group:nth-child(4) {
-  max-width: 232px;
+  max-width: 230px;
 }
 
 .group-amount {
-  display: inline-block;
   font-size: 0px;
-}
-
-.group-amount i {
-padding: 0;
-}
-
-.form-group button {
-  padding: 0;
-  border: 0;
 }
 
 .adults,
@@ -338,8 +325,14 @@ padding: 0;
   display: inline-block;
   width: 42px;
   height: 38px;
+  padding: 0;
+  border: 0;
   vertical-align: top;
   background: #f2f2f2;
+}
+
+.form-group .btn-minus {
+  margin-left: 20px;
 }
 
 .group-amount {
