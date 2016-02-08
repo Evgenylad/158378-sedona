@@ -244,7 +244,6 @@ line-height: 26px;
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
-  margin-bottom: 55px;
 }
 
 .form-booking {
@@ -271,14 +270,22 @@ line-height: 26px;
     font-weight: bold;
 }
 
+.form-group label:nth-child(4) {
+  padding-left: 50px;
+}
+
 .form-group input {
   display: inline-block;
   vertical-align: top;
   background: #f2f2f2;
 }
 
-#arrival-date,
-#departure-date {
+.form-group:first-child {
+  margin-top: 55px;
+}
+
+.arrival-date,
+.departure-date {
   width: 331px;
   height: 38px;
   padding: 0;
@@ -286,7 +293,7 @@ line-height: 26px;
   border: 0;
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 14px;
-  color: #ffffff;
+  color: #000000;
   font-weight: bold;
   line-height: 26px;
   text-transform: uppercase;
@@ -314,15 +321,15 @@ padding: 0;
   border: 0;
 }
 
-#adults,
-#children {
+.adults,
+.children {
   width: 30px;
   height: 38px;
   border: 0;
   padding: 0;
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 14px;
-  color: #ffffff;
+  color: #000000;
   font-weight: bold;
   line-height: 26px;
 }
