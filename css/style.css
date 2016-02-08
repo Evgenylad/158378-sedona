@@ -272,6 +272,8 @@ line-height: 26px;
 }
 
 .form-group input {
+  display: inline-block;
+  vertical-align: top;
   background: #f2f2f2;
 }
 
@@ -300,6 +302,11 @@ line-height: 26px;
 
 .group-amount {
   display: inline-block;
+  font-size: 0px;
+}
+
+.group-amount i {
+padding: 0;
 }
 
 .form-group button {
@@ -313,13 +320,19 @@ line-height: 26px;
   height: 38px;
   border: 0;
   padding: 0;
-  padding-left: 42px;
-  padding-right: 42px;
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 14px;
   color: #ffffff;
   font-weight: bold;
   line-height: 26px;
+}
+
+.form-group button {
+  display: inline-block;
+  width: 42px;
+  height: 38px;
+  vertical-align: top;
+  background: #f2f2f2;
 }
 
 .group-amount {
