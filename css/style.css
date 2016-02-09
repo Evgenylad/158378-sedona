@@ -504,11 +504,11 @@ label[for="departure-date"] {
   width: 33%;
 }
 
-.services .service {
+.service {
   position: relative;
 }
 
-.services .service::before {
+.service::before {
   content: "";
   position: absolute;
   top: 0;
