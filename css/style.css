@@ -7,6 +7,47 @@ body {
   text-transform: uppercase;
 }
 
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: "symbols-sedona";
+  src: url("../fonts/symbols-sedona.woff") format("woff"),
+       url("../fonts/symbols-sedona.woff2") format("woff2");
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-sedona";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+
+  speak: none;
+}
+
+.icon-facebook::before { content: "\66"; } /* "f" */
+.icon-twitter::before { content: "\74"; } /* "t" */
+.icon-up-dir::before { content: "\25b2"; } /* "▲" */
+.icon-down-dir::before { content: "\25bc"; } /* "▼" */
+.icon-star::before { content: "\2605"; } /* "★" */
+.icon-check-off::before { content: "\2610"; } /* "☐" */
+.icon-check-on::before { content: "\2611"; } /* "☑" */
+.icon-calendar::before { content: "\e800"; } /* "" */
+.icon-plus::before { content: "\e801"; } /* "" */
+.icon-minus::before { content: "\e802"; } /* "" */
+.icon-youtube::before { content: "\f39e"; } /* "" */
+
+
 /* ОБШИЕ ПРАВИЛА */
 .clearfix:after{
   content:'';
@@ -499,25 +540,8 @@ label[for="departure-date"] {
 }
 
 .services {
-  position: relative;
   float:left;
   width: 33%;
-}
-
-.service {
-  position: relative;
-}
-
-.service::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 22px;
-  height: 22px;
-
-  background: url('../img/checkbox-white.png');
 }
 
 .hotel-filter-form legend {
@@ -529,9 +553,25 @@ label[for="departure-date"] {
 
 .service {
   display: block;
+  position: relative;
   padding-left: 40px;
   line-height: 21px;
   color: #ffffff;
+}
+
+.service::before {
+  content: '\2610';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  font-family: "symbols-sedona";
+  font-size: 24px;
+}
+
+.service:checked::before {
+  content: '\2611';
 }
 
 .type {
@@ -759,47 +799,28 @@ font-size: 0px;
 
 .footer-social-btn .btn-blue {
   display: inline-block;
+  position: relative;
   width: 46px;
   height: 48px;
   margin-right: 5px;
   vertical-align: top;
   font-size: 0;
+  text-align: center;
 }
 
-.footer-social-btn .footer-social-btn-inst {
-  background-image: url('../img/tw-logo-white.png');
-  background-repeat: no-repeat;
-  background-position: center;
+.footer-social-btn span {
+font-size: 19px;
+line-height: 48px;
+color: #ffffff;
 }
 
-.footer-social-btn .footer-social-btn-inst:active {
-  background-image: url('../img/tw-logo-dark.png');
-  background-repeat: no-repeat;
-  background-position: center;
+.footer-social-btn span:hover {
+  background-color: #669ec0;
 }
 
-.footer-social-btn .footer-social-btn-fb {
-  background-image: url('../img/fb-logo-white.png');
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.footer-social-btn .footer-social-btn-fb:active {
-  background-image: url('../img/fb-logo-dark.png');
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.footer-social-btn .footer-social-btn-youtube {
-  background-image: url('../img/yoube-white.png');
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.footer-social-btn .footer-social-btn-youtube:active {
-  background-image: url('../img/yoube-dark.png');
-  background-repeat: no-repeat;
-  background-position: center;
+.footer-social-btn span:active {
+  background-color: #5496bd;
+  color: #88b6d1;
 }
 
 .footer-copyright {
