@@ -495,6 +495,7 @@ label[for="departure-date"] {
   padding-right: 6%;
   padding-top: 28px;
   padding-bottom: 32px;
+  color: #ffffff;
 }
 
 .services {
@@ -639,7 +640,6 @@ label[for="departure-date"] {
 
 .hotel-content a {
   text-decoration: none;
-  color: #000000;
 }
 
 .hotel-content h3 {
@@ -648,6 +648,7 @@ label[for="departure-date"] {
   padding-bottom: 7px;
   line-height: 19px;
   font-weight: bold;
+  color: #000000;
 }
 
 .hotel-content h3:hover {
@@ -701,7 +702,7 @@ font-size: 0px;
   vertical-align: top;
   font-size: 14px;
   line-height: 21px;
-  color: #000000;
+  color: #ffffff;
 }
 
 .rate {
@@ -746,7 +747,6 @@ font-size: 0px;
   margin-right: 5px;
   vertical-align: top;
   font-size: 0;
-  background: #81b3d2;
 }
 
 .footer-copyright {
@@ -756,24 +756,19 @@ font-size: 0px;
   text-align: center;
 }
 
-.footer-copyright span {
-  display: inline-block;
-  padding-top: 9px;
-  font-size: 14px;
-  vertical-align: top;
-}
-
-.footer-copyright img {
-  display: inline-block;
+.footer-copyright .html-academy-logo {
   margin-left: 7px;
   margin-top: 3px;
   vertical-align: top;
+  font-size: 14px;
+  line-height: 26px;
+  background-image: url('../img/academy-logo.png');
 }
 
-.copyright-HTML-Academy-btn:hover {
-  color: #84b5d3;
+.footer-copyright .html-academy-logo:hover {
+  background: #ffffff url('../img/academy-logo-blue.png');
 }
 
-.copyright-HTML-Academy-btn:active {
-  color: #bdbbbc;
+.footer-copyright .html-academy-logo:active {
+  background: #ffffff url('../img/academy-logo-gray.png');
 }
