@@ -31,16 +31,34 @@
 
           <fieldset class="services">
             <legend>Инфраструктура:</legend>
-            <label class="service"><input type="checkbox" id="pool" name="pool" checked hidden>Бассейн</label>
-            <label class="service"><input type="checkbox" id="parking" name="parking" hidden>Парковка</label>
-            <label class="service"><input type="checkbox" id="wi-fi" name="wi-fi" hidden>wi-fi</label>
+            <input type="checkbox" id="pool" name="pool" checked hidden>
+            <label class="service" for="pool">
+              <span>Бассейн</span>
+            </label>
+            <input type="checkbox" id="parking" name="parking" hidden>
+            <label class="service" for="parking">
+              <span>Парковка</span>
+            </label>
+            <input type="checkbox" id="wi-fi" name="wi-fi" disabled hidden>
+            <label class="service" for="pool">
+              <span>wi-fi</span>
+            </label>
           </fieldset>
 
           <fieldset class="type">
             <legend>Тип жилья:</legend>
-            <label class="service"><input type="checkbox" id="hotel" name="hotel" checked hidden>Гостиница</label>
-            <label class="service"><input type="checkbox" id="motel" name="motel" checked hidden>Мотель</label>
-            <label class="service"><input type="checkbox" id="apartments" name="apartments" checked hidden>Апартаменты</label>
+            <input type="checkbox" id="hotel" name="hotel" checked hidden>
+            <label class="service" for="hotel">
+            <span>Гостиница</span>
+            </label>
+            <input type="checkbox" id="motel" name="motel" checked hidden>
+            <label class="service" for="motel">
+            <span>Мотель</span>
+            </label>
+            <input type="checkbox" id="apartments" name="apartments" checked disabled hidden>
+            <label class="service" for="apartments">
+              <span>Апартаменты</span>
+            </label>
           </fieldset>
 
           <div class="price">
@@ -81,8 +99,8 @@
           </div>
 
           <div class="results-arrows">
-            <a href="#"> <i class="results-arrow-up"></i></a>
-            <a href="#"><i class="results-arrow-down"></i></a>
+            <a href="#"><i class="icon-up-dir"></i></a>
+            <a href="#"><i class="icon-down-dir"></i></a>
           </div>
         </div>
 
@@ -109,10 +127,10 @@
 
             <div class="rate">
               <div class="hotel-stars">
-                <i></i>
-                <i></i>
-                <i></i>
-                <i></i>
+                <i class="icon-star"></i>
+                <i class="icon-star"></i>
+                <i class="icon-star"></i>
+                <i class="icon-star"></i>
               </div>
 
               <div class="hotel-rating">Рейтинг: 8,5</div>
@@ -140,8 +158,8 @@
 
             <div class="rate">
               <div class="hotel-stars">
-                <i></i>
-                <i></i>
+                <i class="icon-star"></i>
+                <i class="icon-star"></i>
               </div>
 
               <div class="hotel-rating">Рейтинг: 8,9</div>
@@ -168,9 +186,9 @@
 
             <div class="rate">
               <div class="hotel-stars">
-                <i></i>
-                <i></i>
-                <i></i>
+                <i class="icon-star"></i>
+                <i class="icon-star"></i>
+                <i class="icon-star"></i>
               </div>
 
               <div class="hotel-rating">Рейтинг: 9,2</div>
@@ -183,9 +201,9 @@
         <a class="footer-hastag" href="#">#visitsedona</a>
 
         <section class="footer-social-btn">
-          <a class="btn-blue" href="#">Твиттер <span class="icon-twitter"></span></a>
-          <a class="btn-blue" href="#">Фейсбук <span class="icon-facebook"></span></a>
-          <a class="btn-blue" href="#">YouTube <span class="icon-youtube"></span></a>
+          <a class="btn-blue" href="#">Твиттер <i class="icon-twitter"></i></a>
+          <a class="btn-blue" href="#">Фейсбук <i class="icon-facebook"></i></a>
+          <a class="btn-blue" href="#">YouTube <i class="icon-youtube"></i></a>
         </section>
 
         <address class="footer-copyright">

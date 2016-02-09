@@ -559,7 +559,7 @@ label[for="departure-date"] {
   color: #ffffff;
 }
 
-.service::before {
+input[type="checkbox"] + label::before  {
   content: '\2610';
   position: absolute;
   top: 0;
@@ -570,8 +570,18 @@ label[for="departure-date"] {
   font-size: 24px;
 }
 
-.service:checked::before {
+input[type="checkbox"]:checked + label::before  {
   content: '\2611';
+}
+
+input[type="checkbox"]:checked:disabled + label::before  {
+  content: '\2611';
+  color: #6a6a6a;
+}
+
+input[type="checkbox"]:disabled + label::before  {
+  content: '\2610';
+  color: #6a6a6a;
 }
 
 .type {
@@ -607,16 +617,16 @@ label[for="departure-date"] {
   font-size: 0;
 }
 
-.sorting-parent span {
+.sorting-header  {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   font-size: 12px;
   line-height: 18px;
 }
 
 .sorting-parent ul {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   font-size: 12px;
   margin-top: 0;
   margin-bottom: 0;
@@ -624,21 +634,14 @@ label[for="departure-date"] {
 
 .results-sorting li {
   display: inline-block;
-  vertical-align: top;
-}
-
-.sorting-header {
-  display: inline-block;
+  vertical-align: middle;
+  line-height: 18px;
+  padding-right: 32px;
 }
 
 .sorting-active {
-  display: inline-block;
   text-decoration: none;
   color: #81b3d2;
-}
-
-.sorting-parent li {
-  padding-right: 32px;
 }
 
 .sorting-notactive {
@@ -662,16 +665,33 @@ label[for="departure-date"] {
 }
 
 .results-arrows {
+  display: inline-block;
+  position: relative;
   float: right;
-  width: 40px;
+  width: 55px;
+  height: 30px;
+  vertical-align: top;
   font-size: 0;
 
 }
 
-.results-arrow-down {
+.results-arrows a {
   display: inline-block;
-  vertical-align: middle;
-  font-size: 21px
+  vertical-align: top;
+  color: #cccccc;
+}
+
+.results-arrows i {
+  line-height: 20px;
+  font-size: 19px;
+}
+
+.results-arrows:hover i {
+  color: #000000;
+}
+
+.results-arrows:active i {
+  color: #81b3d2;
 }
 
 .hotel {
@@ -702,7 +722,7 @@ label[for="departure-date"] {
 .hotel-content h3 {
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 7px;
+  margin-bottom: 10px;
   line-height: 19px;
   font-weight: bold;
   color: #000000;
@@ -724,7 +744,7 @@ font-size: 0px;
   display: inline-block;
   min-width: 110px;
   margin-right: 5px;
-  padding-bottom: 9px;
+  margin-bottom: 13px;
   vertical-align: top;
   font-size: 14px;
   line-height: 21px;
@@ -734,7 +754,7 @@ font-size: 0px;
   display: inline-block;
   min-width: 142px;
   vertical-align: top;
-  padding-bottom: 9px;
+  margin-bottom: 13px;
   font-size: 14px;
   line-height: 21px;
 }
@@ -766,6 +786,34 @@ font-size: 0px;
   float: right;
   width: 20%;
   text-align: right;
+  font-size: 0;
+}
+
+.hotel-stars {
+  display: inline-block;
+  position: relative;
+  width: 130px;
+  height: 40px;
+  margin-bottom: 23px;
+  vertical-align: top;
+}
+
+.hotel-stars i {
+  font-size: 20px;
+  line-height: 20px;
+  color: #81b3d2;
+}
+
+.hotel-rating {
+  display: inline-block;
+  width: 110px;
+  height: 24px;
+  padding-top: 3px;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #666666
 }
 
 /* MAIN FOOTER */
