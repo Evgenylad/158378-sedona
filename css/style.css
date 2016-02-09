@@ -499,8 +499,25 @@ label[for="departure-date"] {
 }
 
 .services {
+  position: relative;
   float:left;
   width: 33%;
+}
+
+.services .service {
+  position: relative;
+}
+
+.services .service::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 22px;
+  height: 22px;
+
+  background: url('../img/checkbox-white.png');
 }
 
 .hotel-filter-form legend {
@@ -750,8 +767,39 @@ font-size: 0px;
 }
 
 .footer-social-btn .footer-social-btn-inst {
-  background-image: url('../img/tw-logo-white.png') no-repeat;
-  background-position: left bottom;
+  background-image: url('../img/tw-logo-white.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-social-btn .footer-social-btn-inst:active {
+  background-image: url('../img/tw-logo-dark.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-social-btn .footer-social-btn-fb {
+  background-image: url('../img/fb-logo-white.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-social-btn .footer-social-btn-fb:active {
+  background-image: url('../img/fb-logo-dark.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-social-btn .footer-social-btn-youtube {
+  background-image: url('../img/yoube-white.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-social-btn .footer-social-btn-youtube:active {
+  background-image: url('../img/yoube-dark.png');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .footer-copyright {
