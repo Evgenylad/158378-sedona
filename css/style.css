@@ -422,44 +422,19 @@ line-height: 26px;
   color: #ffffff;
 }
 
-.arrival-date {
-  position: relative;
-}
-
-.departure-date {
-  position: relative;
-}
-
-.arrival-date + label::after {
-content: "\e800";
-position: absolute;
-top: 0px;
-right: 0px;
-width: 20px;
-height: 20px;
-font-size: 19px;
-line-height: 20px;
-font-family: "symbols-sedona";
-}
-
-.departure-date::after {
-  display: inline-block;
-  content: "\e800";
-  position: absolute;
-
-  top: 0px;
-  right: 0px;
-  width: 20px;
-  height: 20px;
-  font-size: 19px;
-  line-height: 20px;
-  font-family: "symbols-sedona";
-}
 
 .form-group {
   width: 100%;
   margin-bottom: 30px;
   font-size: 0;
+}
+
+.form-group label {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  vertical-align: middle;
+  text-transform: uppercase;
 }
 
 .form-group input {
@@ -484,12 +459,29 @@ font-family: "symbols-sedona";
   background-color: #ffffff;
 }
 
-.form-group label {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 26px;
-  vertical-align: middle;
-  text-transform: uppercase;
+.travel-dates + i {
+  position: relative;
+}
+
+.travel-dates + i::after {
+content: "\e800";
+position: absolute;
+top: 0;
+right: 0;
+width: 20px;
+height: 20px;
+font-size: 19px;
+line-height: 20px;
+font-family: "symbols-sedona";
+color: #c2c2c2;
+}
+
+.travel-dates:hover + i::after {
+  color: #000000;
+}
+
+.travel-dates:active + i::after {
+  color: #81b3d2;
 }
 
 label[for="arrival-date"] {
