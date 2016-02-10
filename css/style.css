@@ -422,6 +422,40 @@ line-height: 26px;
   color: #ffffff;
 }
 
+.arrival-date {
+  position: relative;
+}
+
+.departure-date {
+  position: relative;
+}
+
+.arrival-date + label::after {
+content: "\e800";
+position: absolute;
+top: 0px;
+right: 0px;
+width: 20px;
+height: 20px;
+font-size: 19px;
+line-height: 20px;
+font-family: "symbols-sedona";
+}
+
+.departure-date::after {
+  display: inline-block;
+  content: "\e800";
+  position: absolute;
+
+  top: 0px;
+  right: 0px;
+  width: 20px;
+  height: 20px;
+  font-size: 19px;
+  line-height: 20px;
+  font-family: "symbols-sedona";
+}
+
 .form-group {
   width: 100%;
   margin-bottom: 30px;
@@ -500,6 +534,20 @@ label[for="departure-date"] {
   outline: 0;
   vertical-align: top;
   background: #f2f2f2;
+}
+
+.group-amount i {
+  font-size: 19px;
+  line-height: 38px;
+  color: #a9a9a9;
+}
+
+.group-amount i:hover {
+  color: #000000;
+}
+
+.group-amount i:active {
+  color: #81b3d2;
 }
 
 .group-amount input {
@@ -634,6 +682,7 @@ input[type="checkbox"]:disabled + label::before  {
   width: 50px;
   margin: 0;
   padding: 0;
+  padding-left: 2px;
   color: inherit;
   font: inherit;
 
@@ -934,7 +983,7 @@ font-size: 0px;
   padding-right: 6%;
 }
 
-.footer-hastag {
+.footer-hashtag {
   float: left;
   width: 26%;
   margin-right: 5%;
@@ -965,17 +1014,17 @@ font-size: 0px;
   text-align: center;
 }
 
-.footer-social-btn span {
-font-size: 19px;
-line-height: 48px;
-color: #ffffff;
+.footer-social-btn i {
+  font-size: 19px;
+  line-height: 48px;
+  color: #ffffff;
 }
 
-.footer-social-btn span:hover {
+.footer-social-btn i:hover {
   background-color: #669ec0;
 }
 
-.footer-social-btn span:active {
+.footer-social-btn i:active {
   background-color: #5496bd;
   color: #88b6d1;
 }
