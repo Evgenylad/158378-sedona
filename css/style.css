@@ -596,6 +596,115 @@ input[type="checkbox"]:disabled + label::before  {
   color: #ffffff;
 }
 
+.price-level {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-level::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-level label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.price-level .min-price,
+.price-level .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-level input {
+  width: 50px;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-controls .toggle:hover {
+  background: #1c4f80;
+}
+
+.range-controls .min-toggle {
+  left: 0;
+}
+
+.range-controls .max-toggle {
+  left: 80%;
+}
+
+.price .level-btn {
+  display: block;
+  margin: auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.price .level-btn:hover {
+  color: #000000;
+  background: #ffffff;
+}
+
 .results-sorting {
   border-bottom: 1px solid #e5e5e5;
   padding-bottom: 30px;
@@ -686,11 +795,11 @@ input[type="checkbox"]:disabled + label::before  {
   font-size: 19px;
 }
 
-.results-arrows:hover i {
+.results-arrows a:hover {
   color: #000000;
 }
 
-.results-arrows:active i {
+.results-arrows a:active {
   color: #81b3d2;
 }
 
