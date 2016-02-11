@@ -362,14 +362,14 @@ margin-bottom: 58px;
 
 .booking h2 {
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 27px;
   font-weight: bold;
   font-size: 30px;
 }
 
 .booking p {
   line-height: 24px;
-  margin-bottom: 49px;
+  margin-bottom: 45px;
 }
 
 .booking-search-btn,
@@ -430,7 +430,8 @@ line-height: 26px;
 
 .form-group {
   width: 100%;
-  margin-bottom: 30px;
+
+  margin-bottom: 28px;
   font-size: 0;
 }
 
@@ -445,6 +446,8 @@ line-height: 26px;
 .form-group input {
   width: 303px;
   height: 38px;
+  padding-top: 0;
+  padding-bottom: 0;
   padding-right: 30px;
   padding-left: 13px;
   font-weight: bold;
@@ -472,7 +475,7 @@ input.travel-dates + i::after {
 content: "\e800";
 position: absolute;
 top: -15px;
-right: 6px;
+right: 8px;
 font-size: 22px;
 line-height: 22px;
 font-family: "symbols-sedona";
@@ -498,12 +501,14 @@ label[for="departure-date"] {
 
 .form-group-adults {
   width: 230px;
+  margin-bottom: 55px;
   font-size: 0;
   float: left;
 }
 
 .form-group-child {
   width: 180px;
+  margin-bottom: 55px;
   float: right;
   font-size: 0;
 }
@@ -519,6 +524,7 @@ label[for="departure-date"] {
 
 .form-group-child .group-amount {
   margin-left: 25px;
+
 }
 
 .group-amount button {
@@ -988,8 +994,8 @@ font-size: 0px;
 
 .footer-hashtag {
   float: left;
-  width: 26%;
-  margin-right: 5%;
+  width: 24.3%;
+
   margin-top: 12px;
   font-size: 21px;
   line-height: 26px;
@@ -1002,7 +1008,7 @@ font-size: 0px;
 .footer-social-btn {
   float: left;
   width: 34%;
-  margin-right: 5%;
+  margin-left: 95px;
   text-align: center;
 }
 
@@ -1011,7 +1017,7 @@ font-size: 0px;
   position: relative;
   width: 46px;
   height: 48px;
-  margin-right: 5px;
+  margin-right: 3px;
   vertical-align: top;
   font-size: 0;
   text-align: center;
@@ -1033,9 +1039,10 @@ font-size: 0px;
 }
 
 .footer-copyright {
+  display: inline-block;
   float: right;
   margin-top: 3px;
-  width: 26%;
+  width: 24%;
   text-align: center;
   font-size: 0;
 }
@@ -1045,7 +1052,9 @@ font-size: 0px;
   padding-top: 7px;
   vertical-align: top;
   font-size: 14px;
+  font-style: normal;
   line-height: 26px;
+  text-align: right;
   text-decoration: none;
   color: #000000;
 }
