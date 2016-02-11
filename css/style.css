@@ -5,6 +5,7 @@ body {
   font-weight: normal;
   line-height: 26px;
   text-transform: uppercase;
+
 }
 
 @font-face {
@@ -126,7 +127,6 @@ fieldset {
   padding-top: 15px;
   padding-bottom: 15px;
   list-style: none;
-  text-align: center;
 }
 
 .main-menu a {
@@ -157,6 +157,11 @@ fieldset {
 
 .main-menu li:nth-child(2n) {
   margin-right: 20%;
+  text-align: left;
+}
+
+.main-menu li:nth-child(3n) {
+  text-align: right;
 }
 
 .main-menu li:nth-child(4n+1) {
@@ -182,16 +187,16 @@ fieldset {
 .header-slogan {
   position: relative;
   width: 100%;
-  padding-top: 76px;
-  padding-bottom: 80px;
+  padding-top: 72px;
+  padding-bottom: 76px;
   background-image: url('../img/main-background-photo.jpg');
-  margin-bottom: 59px;
+  margin-bottom: 64px;
 }
 
 .header-slogan::after {
   content: " ";
   position: absolute;
-  top: 451px;
+  top: 443px;
   left: 0;
   width: 100%;
   height: 57px;
@@ -212,14 +217,14 @@ fieldset {
 
 .features-description {
   margin-top: 0;
-  margin-bottom: 38px;
+  margin-bottom: 30px;
   font-size: 21px;
   font-weight: bold;
 }
 
 .features-header p {
   margin-top: 0;
-  margin-bottom: 55px;
+  margin-bottom: 49px;
 }
 
 .reason {
@@ -236,7 +241,7 @@ fieldset {
 }
 
 .reason-icon {
-  margin-bottom: 75px;
+  margin-bottom: 58px;
 }
 
 .reason-name {
@@ -245,7 +250,7 @@ fieldset {
   width: 155px;
   margin: 0 auto;
   margin-bottom: 25px;
-  padding-top: 50px;
+  padding-top: 52px;
   text-transform: uppercase;
 }
 
@@ -261,11 +266,11 @@ fieldset {
 }
 
 .reason p {
-  width: 70%;
+  width: 65%;
   margin: 0 auto;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
   text-align: center;
-  padding-top: 25px;
+  padding-top: 20px;
 }
 
 .reason-blue p {
@@ -279,7 +284,7 @@ fieldset {
 .reason-icon-house::before {
   content: "";
   position: absolute;
-  top: 55px;
+  top: 60px;
   left: 50%;
   width: 155px;
   height: 70px;
@@ -294,7 +299,7 @@ fieldset {
 .reason-icon-burger::before {
   content: "";
   position: absolute;
-  top: 55px;
+  top: 60px;
   left: 50%;
   width: 155px;
   height: 70px;
@@ -309,16 +314,16 @@ fieldset {
 .reason-icon-gift::before {
   content: "";
   position: absolute;
-  top: 55px;
-  left: 50%;
+  top: 59px;
+  left: 51%;
   width: 155px;
   height: 70px;
-  margin-left: -38px;
+  margin-left: -34px;
   background: url('../img/icon-gift.png') no-repeat;
 }
 
 .reason-icon .reason-name {
-  padding-top: 164px;
+  padding-top: 160px;
 }
 
 .reason-icon p {
@@ -434,7 +439,7 @@ line-height: 26px;
   font-size: 14px;
   line-height: 26px;
   vertical-align: middle;
-  text-transform: uppercase;
+
 }
 
 .form-group input {
@@ -459,28 +464,27 @@ line-height: 26px;
   background-color: #ffffff;
 }
 
-.travel-dates + i {
+input.travel-dates + i {
   position: relative;
 }
 
-.travel-dates + i::after {
+input.travel-dates + i::after {
 content: "\e800";
 position: absolute;
-top: 0;
-right: 0;
-width: 20px;
-height: 20px;
-font-size: 19px;
-line-height: 20px;
+top: -15px;
+right: 6px;
+font-size: 22px;
+line-height: 22px;
 font-family: "symbols-sedona";
 color: #c2c2c2;
+font-style: normal;
 }
 
-.travel-dates:hover + i::after {
+input.travel-dates:hover + i::after {
   color: #000000;
 }
 
-.travel-dates:active + i::after {
+input.travel-dates:active + i::after {
   color: #81b3d2;
 }
 
@@ -585,6 +589,7 @@ label[for="departure-date"] {
 }
 
 .hotel-filter-form legend {
+  padding-bottom: 30px;
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 16px;
   line-height: 21px;
@@ -595,9 +600,15 @@ label[for="departure-date"] {
   display: block;
   position: relative;
   padding-left: 40px;
+  padding-bottom: 30px;
   line-height: 21px;
   color: #ffffff;
 }
+
+.service:last-child {
+  padding-bottom: 0px;
+}
+
 
 input[type="checkbox"] + label::before  {
   content: '\2610';
