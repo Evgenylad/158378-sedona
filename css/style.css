@@ -223,7 +223,6 @@ fieldset {
   min-height: 256px;
   text-align: center;
   line-height: 21px;
-  font-size: 0px;
 }
 
 .reason-blue {
@@ -250,41 +249,46 @@ fieldset {
 }
 
 .reason-number {
-  display: inline-block;
+  text-align: center;
+}
+
+.reason-blue span {
+  display: inline;
+
   position: relative;
-
-  padding: 0 10px;
-  margin: 0 auto;
-
   z-index: 2;
+
+  padding: 0 5px;
+  margin: 0 auto;
 
   font-size: 14px;
   line-height: 21px;
+  text-align: center;
 
+  background-color: #81b3d2;
+  color: #ffffff;
 }
 
 .reason-number::after {
   content: "";
   display: block;
-  position: relative;
-  top: -7px;
+  width: 50px;
 
-  z-index: 1
-  border-bottom: 2px solid #ffffff:
-}
-.reason-gray .reason-number {
-  color: #000000;
+  position: relative;
+  top: -11px;
+  left: 50%;
+  margin-left: -25px;
+  z-index: 1;
+
+  border-bottom: 2px solid #ffffff;
 }
 
 .reason p {
   width: 65%;
   margin: 0 auto;
   padding-bottom: 24px;
-  padding-top: 20px;
-  font-size: 14px;
-  line-height: 21px;
   text-align: center;
-
+  padding-top: 20px;
 }
 
 .reason-blue p {
@@ -364,8 +368,29 @@ fieldset {
 }
 
 .reason-gray {
-background: #eeeeee;
-margin-bottom: 58px;
+  background: #eeeeee;
+  margin-bottom: 58px;
+}
+
+.reason-gray span {
+  display: inline;
+
+  position: relative;
+  z-index: 2;
+
+  padding: 0 5px;
+  margin: 0 auto;
+
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+
+  background: #eeeeee;
+  color: #000000;
+}
+
+.reason-gray .reason-number::after {
+  border-bottom: 2px solid #000000;
 }
 
 .booking {
@@ -589,8 +614,10 @@ label[for="departure-date"] {
 
 .hotel-filter {
   width: 100%;
-  background-image: url('../img/catalog-background-photo.jpg');
   margin-bottom: 30px;
+
+  background-image: url('../img/catalog-background-photo.jpg');
+  background-position: center -60px;
 }
 
 .hotel-filter-form {
@@ -599,7 +626,7 @@ label[for="departure-date"] {
   padding-left: 6%;
   padding-right: 6%;
   padding-top: 28px;
-  padding-bottom: 32px;
+  padding-bottom: 31px;
   color: #ffffff;
 }
 
@@ -608,7 +635,7 @@ label[for="departure-date"] {
   width: 24%;
 }
 
-.servises legend {
+.hotel-filter-form legend {
   padding-bottom: 25px;
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 16px;
@@ -664,14 +691,13 @@ input[type="checkbox"]:disabled + label::before  {
 
 .price {
   float: right;
-  width: 33%;
+  width: 31.33%;
   text-align: left;
   color: #ffffff;
 }
 
 .price legend {
-  margin-left: 22px;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 16px;
   line-height: 21px;
@@ -683,7 +709,7 @@ input[type="checkbox"]:disabled + label::before  {
   width: 315px;
   height: 32px;
   margin-bottom: 20px;
-  margin-left: 28px;
+  margin-left: 11px;
   font-size: 0;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -708,10 +734,14 @@ input[type="checkbox"]:disabled + label::before  {
   cursor: pointer;
 }
 
-.price-level .min-price,
-.price-level .max-price {
+.price-level .min-price {
   width: 90px;
   padding-left: 65px;
+}
+
+.price-level .max-price {
+  width: 90px;
+  padding-left: 59px;
 }
 
 .price-level input {
@@ -730,6 +760,7 @@ input[type="checkbox"]:disabled + label::before  {
 .range-controls {
   position: relative;
   margin-bottom: 32px;
+  margin-left: 13px;
 }
 
 .range-controls .scale {
@@ -777,6 +808,7 @@ input[type="checkbox"]:disabled + label::before  {
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
+  text-transform: uppercase;
 
   background: transparent;
   border: 2px solid #ffffff;
