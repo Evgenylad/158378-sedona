@@ -122,8 +122,8 @@ fieldset {
 .main-menu li {
   display: inline-block;
   width: 20%;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding-top: 15px;
+  padding-bottom: 11px;
   list-style: none;
   text-align: center;
 }
@@ -223,6 +223,7 @@ fieldset {
   min-height: 256px;
   text-align: center;
   line-height: 21px;
+  font-size: 0px;
 }
 
 .reason-blue {
@@ -245,16 +246,32 @@ fieldset {
 }
 
 .reason-gray .reason-name {
-  padding-top: 46px; 
+  padding-top: 46px;
 }
 
 .reason-number {
-  display: block;
-  width: 60px;
+  display: inline-block;
+  position: relative;
+
+  padding: 0 10px;
   margin: 0 auto;
-  color: #ffffff;
+
+  z-index: 2;
+
+  font-size: 14px;
+  line-height: 21px;
+
 }
 
+.reason-number::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: -7px;
+
+  z-index: 1
+  border-bottom: 2px solid #ffffff:
+}
 .reason-gray .reason-number {
   color: #000000;
 }
@@ -263,8 +280,11 @@ fieldset {
   width: 65%;
   margin: 0 auto;
   padding-bottom: 24px;
-  text-align: center;
   padding-top: 20px;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+
 }
 
 .reason-blue p {
@@ -583,29 +603,29 @@ label[for="departure-date"] {
   color: #ffffff;
 }
 
-.services {
+.hotel-filter-form .services {
   float:left;
-  width: 33%;
+  width: 24%;
 }
 
-.hotel-filter-form legend {
-  padding-bottom: 30px;
+.servises legend {
+  padding-bottom: 25px;
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
 }
 
-.service {
+.hotel-filter-form .service {
   display: block;
   position: relative;
   padding-left: 40px;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
   line-height: 21px;
   color: #ffffff;
 }
 
-.service:last-child {
+.hotel-filter-form .service:last-child {
   padding-bottom: 0px;
 }
 
@@ -637,20 +657,33 @@ input[type="checkbox"]:disabled + label::before  {
 
 .type {
   float:left;
-  width: 33%;
+  text-align: left;
+  width: 24%;
   color: #ffffff;
 }
 
 .price {
   float: right;
   width: 33%;
+  text-align: left;
+  color: #ffffff;
+}
+
+.price legend {
+  margin-left: 22px;
+  padding-bottom: 10px;
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
   color: #ffffff;
 }
 
 .price-level {
   position: relative;
-  height: 36px;
+  width: 315px;
+  height: 32px;
   margin-bottom: 20px;
+  margin-left: 28px;
   font-size: 0;
   border: 2px solid #ffffff;
   border-radius: 2px;
