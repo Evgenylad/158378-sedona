@@ -283,8 +283,8 @@ fieldset {
   border-bottom: 2px solid #ffffff;
 }
 
-.reason p {
-  width: 65%;
+.reason-row p {
+  width: 70%;
   margin: 0 auto;
   padding-bottom: 24px;
   text-align: center;
@@ -359,8 +359,16 @@ fieldset {
   float: right;
 }
 
+.reason-row-image p {
+  width: 260px;
+}
+
 .reason-row-invert .reason {
   float: right;
+}
+
+.reason-row-invert p {
+  width: 256px;
 }
 
 .reason-row-invert .reason-image {
