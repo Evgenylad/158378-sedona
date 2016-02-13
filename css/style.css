@@ -476,6 +476,7 @@ line-height: 26px;
   width: 100%;
   height: 473px;
   background: #eeeeee url('../img/map.jpg') no-repeat;
+  overflow: hidden;
 }
 
 .form-booking {
@@ -1197,14 +1198,3 @@ font-size: 0px;
 .footer-copyright .html-academy-logo:active {
   background: #ffffff url('../img/academy-logo-gray.png');
 }
-
-<script>
-  var link = document.querySelector(".booking-search-btn");
-  var popup = document.querySelector(".form-booking");
-
-  link.addEventListener("click", function(event) {
-    event.preventDefault();
-    popup.classList.add("form-booking-show");
-    });
-
-</script>
