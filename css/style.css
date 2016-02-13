@@ -479,14 +479,21 @@ line-height: 26px;
 }
 
 .form-booking {
-  width: 460px;
+  display: none;
   position: absolute;
   top: 0;
   left: 50%;
+
+  width: 460px;
   padding: 55px;
   transform: translateX(-50%);
+
   background-color: #ffffff;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+}
+
+.form-booking-show {
+  display: inline-block;
 }
 
 .booking-form-btn {
@@ -1190,3 +1197,14 @@ font-size: 0px;
 .footer-copyright .html-academy-logo:active {
   background: #ffffff url('../img/academy-logo-gray.png');
 }
+
+<script>
+  var link = document.querySelector(".booking-search-btn");
+  var popup = document.querySelector(".form-booking");
+
+  link.addEventListener("click", function(event) {
+    event.preventDefault();
+    popup.classList.add("form-booking-show");
+    });
+
+</script>

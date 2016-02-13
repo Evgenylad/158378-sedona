@@ -190,6 +190,18 @@
         </address>
 
       </footer>
+
+      <script>
+        var link = document.querySelector(".booking-search-btn");
+        var popup = document.querySelector(".form-booking");
+
+        link.addEventListener("click", function(event) {
+          event.preventDefault();
+          popup.classList.toggle("form-booking-show");
+          });
+
+      </script>
+
     </div>
  </body>
 </html>
