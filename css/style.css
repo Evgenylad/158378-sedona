@@ -288,7 +288,7 @@ fieldset {
   margin: 0 auto;
   padding-bottom: 24px;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 17px;
 }
 
 .reason-blue p {
@@ -360,7 +360,7 @@ fieldset {
 }
 
 .reason-row-image p {
-  width: 260px;
+  width: 280px;
 }
 
 .reason-row-invert .reason {
@@ -368,7 +368,7 @@ fieldset {
 }
 
 .reason-row-invert p {
-  width: 256px;
+  width: 220px;
 }
 
 .reason-row-invert .reason-image {
