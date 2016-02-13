@@ -295,6 +295,10 @@ fieldset {
   color: #ffffff;
 }
 
+.reason-icon p {
+  width: 270px;
+}
+
 .reason-icon-house {
   position: relative;
 }
@@ -345,18 +349,36 @@ fieldset {
 }
 
 .reason-icon p {
+  width: 75%;
   padding-top: 0;
+
 }
 
 .reason-image {
+  position: relative;
+
   height: 256px;
   overflow: hidden;
   width: 66.6666667%;
   margin: 0;
 }
 
-.reason-row-image .reason-image {
+.reason img {
+  position: absolute;
+  top: 40px;
+}
+
+.reason-row-image {
+  position: relative;
+}
+
+.reason-row-image img {
   float: right;
+
+  position: absolute;
+  top: -78px;
+  left: 0;
+
 }
 
 .reason-row-image p {
@@ -373,6 +395,10 @@ fieldset {
 
 .reason-row-invert .reason-image {
   float: left;
+}
+
+.reason-row-invert .reason-name {
+  width: 151px;
 }
 
 .reason-gray {
@@ -478,7 +504,7 @@ line-height: 26px;
 .form-group {
   width: 100%;
 
-  margin-bottom: 28px;
+  margin-bottom: 27px;
   font-size: 0;
 }
 
@@ -547,16 +573,22 @@ label[for="departure-date"] {
 }
 
 .form-group-adults {
+  float: left;
+
   width: 230px;
   margin-bottom: 55px;
+  padding-top: 5px;
+
   font-size: 0;
-  float: left;
 }
 
 .form-group-child {
+  float: right;
+
   width: 180px;
   margin-bottom: 55px;
-  float: right;
+  padding-top: 5px;
+
   font-size: 0;
 }
 
@@ -604,7 +636,7 @@ label[for="departure-date"] {
   height: 38px;
   border: 0;
   padding: 0;
-  padding-left: 13px;
+  padding-left: 16px;
   box-sizing: border-box;
   font-size: 14px;
   color: #000000;
