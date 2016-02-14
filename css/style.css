@@ -1120,8 +1120,6 @@ font-size: 0px;
 .main-footer {
   padding-top: 35px;
   padding-bottom: 37px;
-  padding-left: 6%;
-  padding-right: 6%;
 
   background-color: rgba(255, 255, 255, 0.8);
 }
@@ -1218,5 +1216,6 @@ font-size: 0px;
   left: 0;
 
   width: 100%;
+
   z-index: 2;
 }
