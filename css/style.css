@@ -195,6 +195,7 @@ fieldset {
 
   background-image: url('../img/main-background-photo.jpg');
   background-position: center -54px;
+  background-color: #86b8d8;
 
 }
 
@@ -208,6 +209,7 @@ fieldset {
   height: 57px;
 
   background: url('../img/white-step.png') no-repeat;
+
 }
 
 .header-slogan img {
@@ -345,6 +347,7 @@ fieldset {
   margin-left: -38px;
 
   background: url('../img/icon-house.png') no-repeat;
+  background-color: #81b3d2;
 }
 
 .reason-icon-burger {
@@ -364,6 +367,7 @@ fieldset {
   margin-left: -38px;
 
   background: url('../img/icon-burger.png') no-repeat;
+  background-color: #81b3d2;
 }
 
 .reason-icon-gift {
@@ -383,6 +387,7 @@ fieldset {
   margin-left: -34px;
 
   background: url('../img/icon-gift.png') no-repeat;
+  background-color: #81b3d2;
 }
 
 .reason-icon .reason-name {
@@ -749,6 +754,7 @@ label[for="departure-date"] {
 
   background-image: url('../img/catalog-background-photo.jpg');
   background-position: center -60px;
+  background-color: #527da6;
 
   overflow: none;
 }
