@@ -454,7 +454,7 @@ line-height: 26px;
 
 .booking-search-btn {
   display: inline-block;
-  min-width: 569px;
+  min-width: 570px;
   min-height: 26px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -499,6 +499,16 @@ line-height: 26px;
 
 .form-booking-show {
   display: inline-block;
+
+  animation: moving-down 4s;
+}
+
+@keyframes moving-down {
+  from { transform: translate(-50%, -100px);   }
+  25%  { transform: translate(-50%, 100px);    }
+  50%  { transform: translate(-75%, 0);        }
+  75%  { transform: translate(0, 0);          }
+  100% { transform: translate(-50%, 0);          }
 }
 
 .booking-form-btn {
@@ -1121,7 +1131,7 @@ font-size: 0px;
   box-sizing: border-box;
 
   width: 100%;
-  
+
   padding-top: 35px;
   padding-bottom: 37px;
   padding-left: 6%;
