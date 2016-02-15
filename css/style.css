@@ -109,6 +109,10 @@ fieldset {
   min-width: 768px;
   max-width: 1200px;
   margin: auto;
+
+  box-shadow:
+    -40px 0 0 0 #f2f2f2,
+    40px 0 0 0 #f2f2f2;
 }
 
 .main-menu {
@@ -1335,7 +1339,7 @@ font-size: 0px;
   height: 39px;
 
   margin-left: 7px;
-  
+
   vertical-align: top;
   background-image: url('../img/academy-logo.png');
 }
