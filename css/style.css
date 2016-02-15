@@ -551,7 +551,7 @@ line-height: 26px;
 .form-booking-show {
   display: inline-block;
 
-  animation: moving-down 0.5s;
+  animation: moving-down 2s;
 }
 
 @keyframes moving-down {
