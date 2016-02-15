@@ -1,3 +1,4 @@
+/* Форма бронирования*/
 var link = document.querySelector(".booking-search-btn");
 var popup = document.querySelector(".form-booking");
 
@@ -8,6 +9,7 @@ link.addEventListener("click", function(event) {
   });
 }
 
+/*Интерактивная карта*/
 function initialize() {
   var mapOptions = {
     zoom: 9,
