@@ -1163,8 +1163,8 @@ font-size: 0px;
 .hotel-type {
   display: inline-block;
 
-  min-width: 110px;
-  max-width: 220px;
+  min-width: 76px;
+  max-width: 200px;
 
   margin-right: 5px;
   margin-bottom: 13px;
@@ -1177,8 +1177,8 @@ font-size: 0px;
 .hotel-price {
   display: inline-block;
 
-  min-width: 142px;
-  max-width: 216px;
+  min-width: 108px;
+  max-width: 200px;
 
   vertical-align: top;
   margin-bottom: 13px;
@@ -1190,7 +1190,7 @@ font-size: 0px;
   display: inline-block;
 
   min-width: 76px;
-  max-width: 150px;
+  max-width: 200px;
   min-height: 21px;
 
   padding: 3px 16px;
@@ -1205,8 +1205,8 @@ font-size: 0px;
 .hotel-booking-btn {
   display: inline-block;
 
-  max-width: 108px;
-  max-width: 216px;
+  min-width: 108px;
+  max-width: 200px;
   min-height: 21px;
 
   padding: 3px 17px;
