@@ -156,10 +156,10 @@ fieldset {
   color: #766357;
 }
 
-.main-menu .active:hover {
+.main-menu .current:hover {
   color: #604e43;
 }
-.main-menu .active:active {
+.main-menu .current:active {
   color: #dbd8d5;
 }
 
@@ -468,11 +468,15 @@ fieldset {
   text-align: center;
 
   background: #eeeeee;
-  color: #000000;
+  color: #333333;
+}
+
+.reason-gray p {
+  color: #333333;
 }
 
 .reason-gray .reason-number::after {
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #a8a8a8;
 }
 
 .booking {
@@ -614,6 +618,21 @@ line-height: 26px;
   border: none;
 }
 
+.group-amount input {
+  width: 38px;
+  height: 38px;
+
+  border: 0;
+  padding: 0;
+  padding-left: 16px;
+  box-sizing: border-box;
+
+  font-size: 14px;
+  color: #000000;
+  font-weight: bold;
+  line-height: 26px;
+}
+
 .form-group input:hover {
   background-color: #ebebeb;
 }
@@ -631,9 +650,9 @@ content: "\e800";
 
 position: absolute;
 top: -15px;
-right: 8px;
+right: 9px;
 
-font-size: 22px;
+font-size: 21px;
 line-height: 22px;
 font-family: "symbols-sedona";
 color: #c2c2c2;
@@ -706,8 +725,8 @@ label[for="departure-date"] {
 }
 
 .group-amount i {
-  font-size: 19px;
-  line-height: 38px;
+  font-size: 13px;
+  line-height: 41px;
   color: #a9a9a9;
 }
 
@@ -719,20 +738,6 @@ label[for="departure-date"] {
   color: #81b3d2;
 }
 
-.group-amount input {
-  width: 38px;
-  height: 38px;
-
-  border: 0;
-  padding: 0;
-  padding-left: 16px;
-  box-sizing: border-box;
-
-  font-size: 14px;
-  color: #000000;
-  font-weight: bold;
-  line-height: 26px;
-}
 
 
 /* HOTELS */
@@ -795,6 +800,8 @@ label[for="departure-date"] {
 
   line-height: 21px;
   color: #ffffff;
+
+  cursor: pointer;
 }
 
 .hotel-filter-form .service:last-child {
@@ -896,6 +903,7 @@ input[type="checkbox"]:disabled + label::before  {
   font-size: 14px;
   line-height: 35px;
   vertical-align: top;
+
   cursor: pointer;
 }
 
@@ -914,7 +922,7 @@ input[type="checkbox"]:disabled + label::before  {
 
   margin: 0;
   padding: 0;
-  padding-left: 2px;
+  padding-left: 4px;
 
   color: inherit;
   font: inherit;
@@ -1086,7 +1094,10 @@ input[type="checkbox"]:disabled + label::before  {
 .results-arrows i {
 
   font-size: 18px;
+}
 
+.results-arrows .icon-down-dir {
+  color: #81b3d2;
 }
 
 .results-arrows a:hover {
