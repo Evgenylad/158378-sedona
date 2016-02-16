@@ -12,10 +12,10 @@
       <header class="main-header">
         <nav class="main-menu clearfix">
           <ul>
-            <li><a href="#"> Информация</a></li>
-            <li><a href="#"> Фото и видео</a></li>
-            <li><a href="#"> Карта штата</a></li>
-            <li><a class="current" href="sedona-hotels.html"> Гостиницы</a></li>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a href="#">Карта штата</a></li>
+            <li class="current"><a href="sedona-hotels.html"> Гостиницы</a></li>
           </ul>
         </nav>
 
@@ -32,13 +32,9 @@
           <fieldset class="services">
             <legend>Инфраструктура:</legend>
             <input type="checkbox" id="pool" name="pool" checked hidden>
-            <label class="service" for="pool">
-            Бассейн
-            </label>
+            <label class="service" for="pool">Бассейн</label>
             <input type="checkbox" id="parking" name="parking" hidden>
-            <label class="service" for="parking">
-            Парковка
-            </label>
+            <label class="service" for="parking">Парковка</label>
             <input type="checkbox" id="wi-fi" name="wi-fi" disabled hidden>
             <label class="service" for="wi-fi">
             wi-fi
@@ -48,55 +44,47 @@
           <fieldset class="type">
             <legend>Тип жилья:</legend>
             <input type="checkbox" id="hotel" name="hotel" checked hidden>
-            <label class="service" for="hotel">
-            Гостиница
-            </label>
+            <label class="service" for="hotel">Гостиница</label>
             <input type="checkbox" id="motel" name="motel" checked hidden>
-            <label class="service" for="motel">
-            Мотель
-            </label>
+            <label class="service" for="motel">Мотель</label>
             <input type="checkbox" id="apartments" name="apartments" checked disabled hidden>
-            <label class="service" for="apartments">
-            Апартаменты
-            </label>
+            <label class="service" for="apartments">Апартаменты</label>
           </fieldset>
 
-          <div class="price">
-            <fieldset>
-              <legend>Стоимость в сутки (р):</legend>
-              <div class="price-level">
-                <label class="min-price">От<input type="text" name="min-price" value="0"></label>
-                <label class="max-price">До<input type="text" name="max-price" value="3000"></label>
-              </div>
+          <fieldset class="price">
+            <legend>Стоимость в сутки (р):</legend>
+            <div class="price-level">
+              <label class="min-price">От<input type="text" name="min-price" value="0"></label>
+              <label class="max-price">До<input type="text" name="max-price" value="3000"></label>
+            </div>
 
-              <div class="range-controls">
-                <div class="scale">
-                  <div class="bar" style="width: 80%;"></div>
-                </div>
-                <div class="toggle min-toggle"></div>
-                <div class="toggle max-toggle"></div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar" style="width: 80%;"></div>
               </div>
-            </fieldset>
+              <div class="toggle min-toggle"></div>
+              <div class="toggle max-toggle"></div>
+            </div>
 
             <button type="submit" class="level-btn">Показать</button>
+          </fieldset>
 
-          </div>
         </form>
       </div>
 
       <div class="content-container">
 
-        <div class="catalog">
+        <div class="content-row">
 
           <div class="results-sorting clearfix">
-            <h1>Найдено: 3</h1>
+            <h2>Найдено: 3</h2>
 
             <div class="sorting-parent">
               <span class="sorting-header">Сортировка:</span>
               <ul>
-                <li><a class="sorting-active" href="#">По цене</a></li>
-                <li><a class="sorting-notactive" href="#">По типу</a></li>
-                <li><a class="sorting-notactive" href="#">По рейтингу</a></li>
+                <li class="sorting-active"><a href="#">По цене</a></li>
+                <li><a href="#">По типу</a></li>
+                <li><a href="#">По рейтингу</a></li>
               </ul>
             </div>
 
@@ -107,7 +95,7 @@
           </div>
         </div>
 
-        <div class="catalog">
+        <div class="content-row">
           <article class="hotel clearfix">
 
             <figure class="hotel-foto">
@@ -115,7 +103,7 @@
             </figure>
 
             <div class="hotel-content">
-              <a href="#"><h3>Amara Resort&SPA</h3></a>
+              <a href="#"><h1>Amara Resort&SPA</h1></a>
 
               <div class="hotel-group">
                 <div class="hotel-type">Гостиница</div>
@@ -141,7 +129,7 @@
           </article>
         </div>
 
-        <div class="catalog">
+        <div class="content-row">
           <article class="hotel clearfix">
 
             <figure class="hotel-foto">
@@ -149,7 +137,7 @@
             </figure>
 
             <div class="hotel-content">
-              <a href="#"><h3>Desert Quail INN</h3></a>
+              <a href="#"><h1>Desert Quail INN</h1></a>
 
               <div class="hotel-group">
                 <div class="hotel-type">Мотель</div>
@@ -173,7 +161,7 @@
           </article>
         </div>
 
-        <div class="catalog">
+        <div class="content-row">
           <article class="hotel clearfix">
 
             <figure class="hotel-foto">
@@ -181,7 +169,7 @@
             </figure>
 
             <div class="hotel-content">
-              <a href="#"><h3> Villas at Poco Diablo</h3></a>
+              <a href="#"><h1>Villas at Poco Diablo</h1></a>
               <div class="hotel-group">
                 <div class="hotel-type">Апартаменты</div>
                 <div class="hotel-price">От 4000 Р.</div>
@@ -210,13 +198,13 @@
         <a class="footer-hashtag" href="#">#visitsedona</a>
 
         <section class="footer-social-btn">
-          <a class="btn-blue" href="#">Твиттер <i class="icon-twitter"></i></a>
-          <a class="btn-blue" href="#">Фейсбук <i class="icon-facebook"></i></a>
-          <a class="btn-blue" href="#">YouTube <i class="icon-youtube"></i></a>
+          <a class="btn btn-blue" href="#">Твиттер <i class="icon-twitter"></i></a>
+          <a class="btn btn-blue" href="#">Фейсбук <i class="icon-facebook"></i></a>
+          <a class="btn btn-blue" href="#">YouTube <i class="icon-youtube"></i></a>
         </section>
 
         <address class="footer-copyright">
-          <a class="copyright-HTML-Academy-btn" href="https://htmlacademy.ru">
+          <a href="https://htmlacademy.ru">
             <span>website by</span>
             <div class="html-academy-logo"></div>
           </a>
