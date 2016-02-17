@@ -341,12 +341,13 @@ fieldset {
   top: 60px;
   left: 50%;
 
-  width: 155px;
+  width: 73px;
   height: 70px;
 
   margin-left: -38px;
 
-  background: url("../img/icon-house.png") no-repeat;
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -143px -100px;
 }
 
 .reason-icon-burger {
@@ -360,12 +361,13 @@ fieldset {
   top: 60px;
   left: 50%;
 
-  width: 155px;
+  width: 73px;
   height: 70px;
 
   margin-left: -38px;
 
-  background: url("../img/icon-burger.png") no-repeat;
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -143px -10px;
 }
 
 .reason-icon-gift {
@@ -379,12 +381,13 @@ fieldset {
   top: 59px;
   left: 51%;
 
-  width: 155px;
+  width: 73px;
   height: 70px;
 
   margin-left: -34px;
 
-  background: url("../img/icon-gift.png") no-repeat;
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -237px -10px;
 }
 
 .reason-icon .reason-name {
@@ -1190,7 +1193,7 @@ font-size: 0px;
   display: inline-block;
 
   min-width: 76px;
-  max-width: 200px;
+  max-width: 168px;
   min-height: 21px;
 
   padding: 3px 16px;
@@ -1206,7 +1209,7 @@ font-size: 0px;
   display: inline-block;
 
   min-width: 108px;
-  max-width: 200px;
+  max-width: 164px;
   min-height: 21px;
 
   padding: 3px 17px;
@@ -1372,16 +1375,20 @@ font-size: 0px;
   height: 39px;
 
   vertical-align: top;
-  background-image: url("../img/academy-logo.png");
+  background-image: url("../img/sprite.png");
+  background-position: -10px -10px;
 }
 
 .footer-copyright .html-academy-logo:hover {
-  background: #ffffff url("../img/academy-logo-blue.png");
+  background: url("../img/sprite.png");
+  background-position: -10px -69px;
 }
 
 .footer-copyright .html-academy-logo:active {
-  background: #ffffff url("../img/academy-logo-gray.png");
+  background: url("../img/sprite.png");
+  background-position: -10px -128px;
 }
+
 
 /* MAIN-FOOTER */
 
