@@ -242,7 +242,7 @@ fieldset {
   margin: auto;
 
   margin-top: 0;
-  margin-bottom: 28px;
+  margin-bottom: 27px;
 
   font-size: 21px;
   font-weight: bold;
@@ -276,7 +276,7 @@ fieldset {
   width: 155px;
 
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   padding-top: 54px;
 
   font-size: 21px;
@@ -284,7 +284,7 @@ fieldset {
 }
 
 .reason-gray .reason-name {
-  padding-top: 46px;
+  padding-top: 48px;
 }
 
 .reason-number {
@@ -321,8 +321,8 @@ fieldset {
   width: 70%;
 
   margin: 0 auto;
+  padding-top: 18px;
   padding-bottom: 24px;
-  padding-top: 17px;
 
 }
 
@@ -391,7 +391,7 @@ fieldset {
 }
 
 .reason-icon .reason-name {
-  padding-top: 160px;
+  padding-top: 161px;
 }
 
 .reason-icon p {
@@ -409,7 +409,6 @@ fieldset {
   margin: 0;
 
   overflow: hidden;
-
 }
 
 .reason img {
@@ -452,7 +451,7 @@ fieldset {
 
 .reason-gray {
   background: #eeeeee;
-  margin-bottom: 58px;
+  margin-bottom: 56px;
 }
 
 .reason-gray span {
@@ -488,7 +487,7 @@ fieldset {
 
 .booking h2 {
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 29px;
 
   font-weight: bold;
   font-size: 30px;
@@ -498,7 +497,7 @@ fieldset {
   width: 570px;
 
   margin: auto;
-  margin-bottom: 45px;
+  margin-bottom: 47px;
 
   line-height: 24px;
 
@@ -624,7 +623,7 @@ fieldset {
 
   border: 0;
   padding: 0;
-  padding-left: 16px;
+  padding-left: 21px;
   box-sizing: border-box;
 
   font-size: 14px;
@@ -679,7 +678,7 @@ label[for="departure-date"] {
   float: left;
 
   width: 230px;
-  margin-bottom: 55px;
+  margin-bottom: 53px;
   padding-top: 5px;
 
   font-size: 0;
@@ -689,7 +688,7 @@ label[for="departure-date"] {
   float: right;
 
   width: 180px;
-  margin-bottom: 55px;
+  margin-bottom: 53px;
   padding-top: 5px;
 
   font-size: 0;
@@ -711,7 +710,7 @@ label[for="departure-date"] {
 .group-amount button {
   display: inline-block;
 
-  width: 38px;
+  width: 33px;
   height: 38px;
 
   padding: 0;
@@ -884,7 +883,7 @@ input[type="checkbox"]:disabled + label::before  {
 
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 51%;
 
   width: 2px;
   height: 22px;
@@ -1166,7 +1165,7 @@ font-size: 0px;
 .hotel-type {
   display: inline-block;
 
-  min-width: 76px;
+  min-width: 111px;
   max-width: 200px;
 
   margin-right: 5px;
@@ -1180,7 +1179,7 @@ font-size: 0px;
 .hotel-price {
   display: inline-block;
 
-  min-width: 108px;
+  min-width: 142px;
   max-width: 200px;
 
   vertical-align: top;
@@ -1394,7 +1393,7 @@ font-size: 0px;
 
 .map .main-footer {
   position: absolute;
-  bottom: 0;
+  bottom: -6px;
   left: 0;
 
   z-index: 2;
